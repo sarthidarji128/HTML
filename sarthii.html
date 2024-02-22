@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SARTHI</title>
+        <style>
+            
+            :root {
+            --headline-color: rgb(0, 0, 0);
+            --background-color: #11151c;
+            --text-color: rgba(194, 114, 114, 0.5);
+            }
+            .s{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               position: absolute;
+               top: 0;
+               left: 0;
+               right: 0;
+               bottom: 0;
+               pointer-events: none; 
+            }
+
+            #s1,#s2,#s3{
+                font-family:'Roboto',sans-serif;
+                position: absolute;
+                text-align: center;
+                font-size: clamp(24px,20vw,200px);
+                text-transform: uppercase;
+                font-weight: 800;
+                letter-spacing: 10px;
+                line-height:0.8;
+            }
+            #s1{
+                color: var(--headline-color);
+                z-index: 1;
+            }
+
+            #s2{
+                color: var(--headline-color);
+                filter: blur(7.5px);
+                -webkit-filter: blur(7.5px);
+                z-index: 0;
+            }
+
+            #s3{
+                color: transparent;
+                color: var(--headline-color);
+                -webkit-text-stroke:3px var(--headline-color);
+                z-index: 6;
+            }
+        </style>
+    </head>
+    <body style="color: rgb(50, 28, 110);">
+        
+
+    <div class="s">
+        <div id="s1">SARTHI<br>DARJI</div>
+        <div id="s2">SARTHI<br>DARJI</div>
+        <div id="s3">SARTHI<br>DARJI</div>
+    </div>
+</body>
+    </html>

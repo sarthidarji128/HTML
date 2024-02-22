@@ -1,0 +1,107 @@
+<!-- 
+<input type="text">
+<input type="radio">
+<input type="submit">
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <style>
+        .title {  
+        margin-bottom: 10px;  
+        padding: 5px 0;  
+        font-size: 25px;  
+        font-weight: bold;  
+        text-align: center;  
+        color: rgba(101, 92, 178, 0.587);  
+        font-family: 'Cookie', cursive;  
+        }  
+    </style>
+    <title>form1</title>
+    <body style="background-color: rgb(203, 214, 214);">
+        <div class="title">
+        <h1 align="center">Form</h1>
+        </div>   
+    <div style="background-color: peachpuff;">
+        <form align="center">
+            <fieldset>
+            <legend><h2><b>Personal Information</b></h2></legend>
+            Firstname:<br>
+            <input type="text" name="firstname">
+            <br>
+            <br>
+            Lastname:<br>
+            <input type="text" name="lastname">
+            <br><br>
+            Password:<br>
+            <input type="password" name="password">
+            <br><br>
+            Address :<br>
+            <textarea name="msg" rows="10" cols="40"></textarea>
+            <br>
+            </fieldset>
+        </form>
+    </div>
+        <div align="center" style="background-color: bisque;">
+        <h3 align="center">Gender</h3>
+        <form align="center">
+            <input type="radio" name="gender" value="male" checked>Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <input type="radio" name="gender" value="others"> Other<br>
+        </form>
+        </div>
+
+        <div style="background-color: rgb(200, 230, 220);">
+            <form align="center">
+                <h3 align="center">State</h3>
+                <select name="state" size="2" multiple>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                </select>
+                <h3 align="center">City</h3>
+                <select name="City">
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+                <br><br>
+                <h4>Pincode</h4>
+                <input type="text" name="pincode">
+                <br><br>
+                <input type="submit">
+            </form>
+        </div>
+        <div align ="center" style="background-color: rgb(181, 177, 131);">
+            <h2 align="center">Data list</h2>
+            <form align="center">
+                <input list="browser" name="Browser">
+                <datalist id="browser" name="Browser">
+                    <option value="Internet Explorer"></option>
+                    <option value="Firefox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Safari"></option>
+                </datalist>
+                <input type="submit">
+            </form>
+            <br>
+        </div>
+        <div style="background-color: bisque;" class="container mt-3">
+            <br><br>
+            <form align="center">
+              <div class="mb-3 mt-3">
+                <label style="color: rgb(238, 111, 111);" for="email">Email  </label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="mb-3">
+                <label style="color: brown;" for="pwd">Password  </label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                <br><br>
+              </div>
+            </form>
+            <br>
+          </div>
+    </body>
+</html>
+
+

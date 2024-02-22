@@ -1,0 +1,46 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height:auto;
+    background-color: rgb(77, 77, 77);
+    border: 1px solid rgba(117, 110, 110, 0.689);
+}
+.flex-item1{
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+    background-color: rgb(235, 13, 13);
+    width: 100px;
+    height: 100px;
+    margin: 11px;
+    border-radius:50px;
+    line-height: 7;
+
+}
+.flex-item2{
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+    background-color: rgb(203, 228, 13);
+    width: 100px;
+    height: 100px;
+    margin: 11px;
+    border-radius:50px;
+    line-height: 7;
+
+}
+
+.flex-item3{
+    text-align: center;
+    align-items:center;
+    flex-direction: column;
+    justify-content:center;
+    background-color: rgb(35, 235, 13);
+    width: 100px;
+    height: 100px;
+    margin: 11px;
+    border-radius:50px;
+    line-height: 7;
+}
